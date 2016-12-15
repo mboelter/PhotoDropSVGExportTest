@@ -5,7 +5,7 @@ var fr;
 
 var img = new Array(35);
 var imgIndex = 1;
-var thresholdValue = 0.5;
+var thresholdValue = 0.0;
 var oldThresholdValue = 0.4;
 var scanning = false;
 var scX = 5;
@@ -28,21 +28,26 @@ function setup() {
     cp = new Controls();
     gui = new dat.GUI();
     initGUI();
+
+    frameRate(5);
 }
 
 function draw() {
-    thresholdValue = cp.threshold_value;
-    
-    // if (thresholdValue != oldThresholdValue) {
-    //     // img[imgIndex].filter("threshold", thresholdValue);
-    //     oldThresholdValue = thresholdValue;
-    // }
-    // image(img[imgIndex], 0, 0, 600, 600);
-
     background(125);
-    fill(50);
-    noStroke();
-    ellipse(width / 2, height / 2, map(thresholdValue, 0.0, 1.0, 10, 200), map(thresholdValue, 0.0, 1.0, 10, 200));
+
+    thresholdValue = cp.threshold_value;
+    if (thresholdValue != oldThresholdValue) {
+        img[imgIndex].filter("threshold", thresholdValue);
+        console.log(thresholdValue);
+        oldThresholdValue = thresholdValue;
+    }
+    image(img[imgIndex], 0, 0, 600, 600);
+    
+    // If commet teh codes up and uncomment these parts,  the shape of the circle changes with 
+    // "threshold" slider value
+    // fill(50);
+    // noStroke();
+    // ellipse(width / 2, height / 2, map(thresholdValue, 0.0, 1.0, 10, 200), map(thresholdValue, 0.0, 1.0, 10, 200));
 }
 
 var initGUI = function() {
