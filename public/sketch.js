@@ -43,8 +43,9 @@ function draw() {
     }
     image(img[imgIndex], 0, 0, 600, 600);
     
-    // If commet teh codes up and uncomment these parts,  the shape of the circle changes with 
-    // "threshold" slider value
+    // If you commet the codes up and uncomment these parts,  the shape of the circle 
+    // changes with "threshold" slider value
+    
     // fill(50);
     // noStroke();
     // ellipse(width / 2, height / 2, map(thresholdValue, 0.0, 1.0, 10, 200), map(thresholdValue, 0.0, 1.0, 10, 200));
