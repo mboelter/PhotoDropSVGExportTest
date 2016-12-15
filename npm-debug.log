@@ -1,0 +1,711 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'nodemon',
+1 verbose cli   'to',
+1 verbose cli   'update',
+1 verbose cli   '--save' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose install initial load of /Users/saurabh.datta/.node_modules_global/lib/package.json
+5 verbose readDependencies loading dependencies from /Users/saurabh.datta/.node_modules_global/lib/package.json
+6 silly cache add args [ 'nodemon', null ]
+7 verbose cache add spec nodemon
+8 silly cache add args [ 'to', null ]
+9 verbose cache add spec to
+10 silly cache add args [ 'update', null ]
+11 verbose cache add spec update
+12 silly cache add parsed spec Result {
+12 silly cache add   raw: 'nodemon',
+12 silly cache add   scope: null,
+12 silly cache add   name: 'nodemon',
+12 silly cache add   rawSpec: '',
+12 silly cache add   spec: '*',
+12 silly cache add   type: 'range' }
+13 silly addNamed nodemon@*
+14 verbose addNamed "*" is a valid semver range for nodemon
+15 silly addNameRange { name: 'nodemon', range: '*', hasData: false }
+16 silly mapToRegistry name nodemon
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/nodemon
+20 verbose addNameRange registry:https://registry.npmjs.org/nodemon not in flight; fetching
+21 silly cache add parsed spec Result {
+21 silly cache add   raw: 'to',
+21 silly cache add   scope: null,
+21 silly cache add   name: 'to',
+21 silly cache add   rawSpec: '',
+21 silly cache add   spec: '*',
+21 silly cache add   type: 'range' }
+22 silly addNamed to@*
+23 verbose addNamed "*" is a valid semver range for to
+24 silly addNameRange { name: 'to', range: '*', hasData: false }
+25 silly mapToRegistry name to
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/to
+29 verbose addNameRange registry:https://registry.npmjs.org/to not in flight; fetching
+30 silly cache add parsed spec Result {
+30 silly cache add   raw: 'update',
+30 silly cache add   scope: null,
+30 silly cache add   name: 'update',
+30 silly cache add   rawSpec: '',
+30 silly cache add   spec: '*',
+30 silly cache add   type: 'range' }
+31 silly addNamed update@*
+32 verbose addNamed "*" is a valid semver range for update
+33 silly addNameRange { name: 'update', range: '*', hasData: false }
+34 silly mapToRegistry name update
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry uri https://registry.npmjs.org/update
+38 verbose addNameRange registry:https://registry.npmjs.org/update not in flight; fetching
+39 verbose request uri https://registry.npmjs.org/to
+40 verbose request no auth needed
+41 info attempt registry request try #1 at 5:59:31 PM
+42 verbose request id 82f8c394abb01382
+43 http request GET https://registry.npmjs.org/to
+44 verbose request uri https://registry.npmjs.org/update
+45 verbose request no auth needed
+46 info attempt registry request try #1 at 5:59:31 PM
+47 http request GET https://registry.npmjs.org/update
+48 verbose request uri https://registry.npmjs.org/nodemon
+49 verbose request no auth needed
+50 info attempt registry request try #1 at 5:59:31 PM
+51 verbose etag W/"584f6861-30b97"
+52 verbose lastModified Tue, 13 Dec 2016 03:17:53 GMT
+53 http request GET https://registry.npmjs.org/nodemon
+54 http 304 https://registry.npmjs.org/nodemon
+55 verbose headers { date: 'Thu, 15 Dec 2016 09:59:29 GMT',
+55 verbose headers   via: '1.1 varnish',
+55 verbose headers   'cache-control': 'max-age=300',
+55 verbose headers   etag: 'W/"584f6861-30b97"',
+55 verbose headers   age: '0',
+55 verbose headers   connection: 'keep-alive',
+55 verbose headers   'x-served-by': 'cache-nrt6132-NRT',
+55 verbose headers   'x-cache': 'HIT',
+55 verbose headers   'x-cache-hits': '1',
+55 verbose headers   'x-timer': 'S1481795969.146054,VS0,VE486',
+55 verbose headers   vary: 'Accept-Encoding' }
+56 silly get cb [ 304,
+56 silly get   { date: 'Thu, 15 Dec 2016 09:59:29 GMT',
+56 silly get     via: '1.1 varnish',
+56 silly get     'cache-control': 'max-age=300',
+56 silly get     etag: 'W/"584f6861-30b97"',
+56 silly get     age: '0',
+56 silly get     connection: 'keep-alive',
+56 silly get     'x-served-by': 'cache-nrt6132-NRT',
+56 silly get     'x-cache': 'HIT',
+56 silly get     'x-cache-hits': '1',
+56 silly get     'x-timer': 'S1481795969.146054,VS0,VE486',
+56 silly get     vary: 'Accept-Encoding' } ]
+57 verbose etag https://registry.npmjs.org/nodemon from cache
+58 verbose get saving nodemon to /Users/saurabh.datta/.npm/registry.npmjs.org/nodemon/.cache.json
+59 silly addNameRange number 2 { name: 'nodemon', range: '*', hasData: true }
+60 silly addNameRange versions [ 'nodemon',
+60 silly addNameRange   [ '0.1.4',
+60 silly addNameRange     '0.1.5',
+60 silly addNameRange     '0.1.6',
+60 silly addNameRange     '0.1.7',
+60 silly addNameRange     '0.1.8',
+60 silly addNameRange     '0.2.0',
+60 silly addNameRange     '0.2.1',
+60 silly addNameRange     '0.2.2',
+60 silly addNameRange     '0.3.0',
+60 silly addNameRange     '0.3.1',
+60 silly addNameRange     '0.3.2',
+60 silly addNameRange     '0.4.0',
+60 silly addNameRange     '0.4.1',
+60 silly addNameRange     '0.5.0',
+60 silly addNameRange     '0.5.1',
+60 silly addNameRange     '0.5.2',
+60 silly addNameRange     '0.5.3',
+60 silly addNameRange     '0.5.4',
+60 silly addNameRange     '0.5.5',
+60 silly addNameRange     '0.5.6',
+60 silly addNameRange     '0.5.7',
+60 silly addNameRange     '0.6.0',
+60 silly addNameRange     '0.6.1',
+60 silly addNameRange     '0.6.2',
+60 silly addNameRange     '0.6.3',
+60 silly addNameRange     '0.6.4',
+60 silly addNameRange     '0.6.5',
+60 silly addNameRange     '0.6.6',
+60 silly addNameRange     '0.6.7',
+60 silly addNameRange     '0.6.8',
+60 silly addNameRange     '0.6.9',
+60 silly addNameRange     '0.6.10',
+60 silly addNameRange     '0.6.11',
+60 silly addNameRange     '0.6.12',
+60 silly addNameRange     '0.6.13',
+60 silly addNameRange     '0.6.14',
+60 silly addNameRange     '0.6.15',
+60 silly addNameRange     '0.6.16',
+60 silly addNameRange     '0.6.17',
+60 silly addNameRange     '0.6.18',
+60 silly addNameRange     '0.6.19',
+60 silly addNameRange     '0.6.20',
+60 silly addNameRange     '0.6.21',
+60 silly addNameRange     '0.6.22',
+60 silly addNameRange     '0.6.23',
+60 silly addNameRange     '0.7.0',
+60 silly addNameRange     '0.7.1',
+60 silly addNameRange     '0.7.2',
+60 silly addNameRange     '0.7.3',
+60 silly addNameRange     '0.7.4',
+60 silly addNameRange     '0.7.5',
+60 silly addNameRange     '0.7.6',
+60 silly addNameRange     '0.7.7',
+60 silly addNameRange     '0.7.8',
+60 silly addNameRange     '0.7.10',
+60 silly addNameRange     '0.9.0',
+60 silly addNameRange     '0.9.1',
+60 silly addNameRange     '0.9.2',
+60 silly addNameRange     '0.9.3',
+60 silly addNameRange     '0.9.5',
+60 silly addNameRange     '0.9.6',
+60 silly addNameRange     '0.9.7',
+60 silly addNameRange     '0.9.10',
+60 silly addNameRange     '0.9.11',
+60 silly addNameRange     '0.9.12',
+60 silly addNameRange     '0.9.14',
+60 silly addNameRange     '0.9.16',
+60 silly addNameRange     '0.9.17',
+60 silly addNameRange     '1.0.0',
+60 silly addNameRange     '1.0.1',
+60 silly addNameRange     '1.0.2',
+60 silly addNameRange     '1.0.2-rc',
+60 silly addNameRange     '0.6.10-a',
+60 silly addNameRange     '1.0.2-rc3',
+60 silly addNameRange     '1.0.2-rc4',
+60 silly addNameRange     '1.0.3',
+60 silly addNameRange     '1.0.4',
+60 silly addNameRange     '1.0.5',
+60 silly addNameRange     '1.0.6',
+60 silly addNameRange     '1.0.7',
+60 silly addNameRange     '1.0.8',
+60 silly addNameRange     '1.0.9',
+60 silly addNameRange     '1.0.10',
+60 silly addNameRange     '1.0.11',
+60 silly addNameRange     '1.0.12',
+60 silly addNameRange     '1.0.13',
+60 silly addNameRange     '1.0.14',
+60 silly addNameRange     '1.0.15',
+60 silly addNameRange     '1.0.16',
+60 silly addNameRange     '1.0.17-rc1',
+60 silly addNameRange     '1.0.17-rc2',
+60 silly addNameRange     '1.0.17',
+60 silly addNameRange     '1.0.18',
+60 silly addNameRange     '1.0.19',
+60 silly addNameRange     '1.0.20',
+60 silly addNameRange     '1.1.0-alpha',
+60 silly addNameRange     '1.1.0',
+60 silly addNameRange     '1.1.1',
+60 silly addNameRange     '1.2.0',
+60 silly addNameRange     '1.2.1',
+60 silly addNameRange     '1.3.0-0',
+60 silly addNameRange     '1.3.0-1',
+60 silly addNameRange     '1.3.0-2',
+60 silly addNameRange     '1.3.0-3',
+60 silly addNameRange     '1.3.0-4',
+60 silly addNameRange     '1.3.0-5',
+60 silly addNameRange     '1.3.0-6',
+60 silly addNameRange     '1.3.0-7',
+60 silly addNameRange     '1.3.0',
+60 silly addNameRange     '1.3.1',
+60 silly addNameRange     '1.3.2',
+60 silly addNameRange     '1.3.3',
+60 silly addNameRange     '1.3.5',
+60 silly addNameRange     '1.3.6',
+60 silly addNameRange     '1.3.7',
+60 silly addNameRange     '1.3.8',
+60 silly addNameRange     '1.4.0',
+60 silly addNameRange     '1.4.1',
+60 silly addNameRange     '1.5.0-alpha1',
+60 silly addNameRange     '1.5.0-alpha2',
+60 silly addNameRange     '1.5.0-alpha3',
+60 silly addNameRange     '1.5.0-alpha4',
+60 silly addNameRange     '1.4.2',
+60 silly addNameRange     '1.5.0',
+60 silly addNameRange     '1.5.1',
+60 silly addNameRange     '1.6.0',
+60 silly addNameRange     '1.6.1',
+60 silly addNameRange     '1.7.0',
+60 silly addNameRange     '1.7.1',
+60 silly addNameRange     '1.7.2',
+60 silly addNameRange     '1.7.3',
+60 silly addNameRange     '1.8.0',
+60 silly addNameRange     '1.8.1',
+60 silly addNameRange     '1.9.0',
+60 silly addNameRange     '1.9.1',
+60 silly addNameRange     '1.9.2',
+60 silly addNameRange     '1.10.0',
+60 silly addNameRange     '1.10.1',
+60 silly addNameRange     '1.10.2',
+60 silly addNameRange     '1.11.0' ] ]
+61 silly addNamed nodemon@1.11.0
+62 verbose addNamed "1.11.0" is a plain semver version for nodemon
+63 silly cache afterAdd nodemon@1.11.0
+64 verbose afterAdd /Users/saurabh.datta/.npm/nodemon/1.11.0/package/package.json not in flight; writing
+65 verbose afterAdd /Users/saurabh.datta/.npm/nodemon/1.11.0/package/package.json written
+66 http 200 https://registry.npmjs.org/to
+67 verbose headers { server: 'nginx/1.10.1',
+67 verbose headers   'content-type': 'application/json',
+67 verbose headers   'last-modified': 'Wed, 12 Dec 2012 02:47:19 GMT',
+67 verbose headers   etag: 'W/"50c7f037-91a2"',
+67 verbose headers   'content-encoding': 'gzip',
+67 verbose headers   'cache-control': 'max-age=300',
+67 verbose headers   'content-length': '3493',
+67 verbose headers   'accept-ranges': 'bytes',
+67 verbose headers   date: 'Thu, 15 Dec 2016 09:59:29 GMT',
+67 verbose headers   via: '1.1 varnish',
+67 verbose headers   age: '0',
+67 verbose headers   connection: 'keep-alive',
+67 verbose headers   'x-served-by': 'cache-nrt6132-NRT',
+67 verbose headers   'x-cache': 'MISS',
+67 verbose headers   'x-cache-hits': '0',
+67 verbose headers   'x-timer': 'S1481795969.220168,VS0,VE452',
+67 verbose headers   vary: 'Accept-Encoding' }
+68 silly get cb [ 200,
+68 silly get   { server: 'nginx/1.10.1',
+68 silly get     'content-type': 'application/json',
+68 silly get     'last-modified': 'Wed, 12 Dec 2012 02:47:19 GMT',
+68 silly get     etag: 'W/"50c7f037-91a2"',
+68 silly get     'content-encoding': 'gzip',
+68 silly get     'cache-control': 'max-age=300',
+68 silly get     'content-length': '3493',
+68 silly get     'accept-ranges': 'bytes',
+68 silly get     date: 'Thu, 15 Dec 2016 09:59:29 GMT',
+68 silly get     via: '1.1 varnish',
+68 silly get     age: '0',
+68 silly get     connection: 'keep-alive',
+68 silly get     'x-served-by': 'cache-nrt6132-NRT',
+68 silly get     'x-cache': 'MISS',
+68 silly get     'x-cache-hits': '0',
+68 silly get     'x-timer': 'S1481795969.220168,VS0,VE452',
+68 silly get     vary: 'Accept-Encoding' } ]
+69 verbose get saving to to /Users/saurabh.datta/.npm/registry.npmjs.org/to/.cache.json
+70 silly addNameRange number 2 { name: 'to', range: '*', hasData: true }
+71 silly addNameRange versions [ 'to',
+71 silly addNameRange   [ '0.0.1',
+71 silly addNameRange     '0.0.2',
+71 silly addNameRange     '0.0.3',
+71 silly addNameRange     '0.1.0',
+71 silly addNameRange     '0.1.1',
+71 silly addNameRange     '0.1.2',
+71 silly addNameRange     '0.2.0',
+71 silly addNameRange     '0.2.1',
+71 silly addNameRange     '0.2.2',
+71 silly addNameRange     '0.2.3',
+71 silly addNameRange     '0.2.4',
+71 silly addNameRange     '0.2.5',
+71 silly addNameRange     '0.2.6',
+71 silly addNameRange     '0.2.7',
+71 silly addNameRange     '0.2.8',
+71 silly addNameRange     '0.2.9' ] ]
+72 silly addNamed to@0.2.9
+73 verbose addNamed "0.2.9" is a plain semver version for to
+74 silly mapToRegistry name to
+75 silly mapToRegistry using default registry
+76 silly mapToRegistry registry https://registry.npmjs.org/
+77 silly mapToRegistry uri https://registry.npmjs.org/to
+78 verbose addRemoteTarball https://registry.npmjs.org/to/-/to-0.2.9.tgz not in flight; adding
+79 verbose addRemoteTarball [ 'https://registry.npmjs.org/to/-/to-0.2.9.tgz',
+79 verbose addRemoteTarball   '0ba5a56fe53538db9205ceb6d7ed217aae4635c4' ]
+80 info retry fetch attempt 1 at 5:59:33 PM
+81 info attempt registry request try #1 at 5:59:33 PM
+82 http fetch GET https://registry.npmjs.org/to/-/to-0.2.9.tgz
+83 http 200 https://registry.npmjs.org/update
+84 verbose headers { server: 'nginx/1.10.1',
+84 verbose headers   'content-type': 'application/json',
+84 verbose headers   'last-modified': 'Thu, 01 Sep 2016 04:45:46 GMT',
+84 verbose headers   etag: 'W/"57c7b27a-14d17"',
+84 verbose headers   'content-encoding': 'gzip',
+84 verbose headers   'cache-control': 'max-age=300',
+84 verbose headers   'content-length': '13158',
+84 verbose headers   'accept-ranges': 'bytes',
+84 verbose headers   date: 'Thu, 15 Dec 2016 09:59:29 GMT',
+84 verbose headers   via: '1.1 varnish',
+84 verbose headers   age: '0',
+84 verbose headers   connection: 'keep-alive',
+84 verbose headers   'x-served-by': 'cache-nrt6123-NRT',
+84 verbose headers   'x-cache': 'MISS',
+84 verbose headers   'x-cache-hits': '0',
+84 verbose headers   'x-timer': 'S1481795969.136097,VS0,VE276',
+84 verbose headers   vary: 'Accept-Encoding' }
+85 silly get cb [ 200,
+85 silly get   { server: 'nginx/1.10.1',
+85 silly get     'content-type': 'application/json',
+85 silly get     'last-modified': 'Thu, 01 Sep 2016 04:45:46 GMT',
+85 silly get     etag: 'W/"57c7b27a-14d17"',
+85 silly get     'content-encoding': 'gzip',
+85 silly get     'cache-control': 'max-age=300',
+85 silly get     'content-length': '13158',
+85 silly get     'accept-ranges': 'bytes',
+85 silly get     date: 'Thu, 15 Dec 2016 09:59:29 GMT',
+85 silly get     via: '1.1 varnish',
+85 silly get     age: '0',
+85 silly get     connection: 'keep-alive',
+85 silly get     'x-served-by': 'cache-nrt6123-NRT',
+85 silly get     'x-cache': 'MISS',
+85 silly get     'x-cache-hits': '0',
+85 silly get     'x-timer': 'S1481795969.136097,VS0,VE276',
+85 silly get     vary: 'Accept-Encoding' } ]
+86 verbose get saving update to /Users/saurabh.datta/.npm/registry.npmjs.org/update/.cache.json
+87 silly addNameRange number 2 { name: 'update', range: '*', hasData: true }
+88 silly addNameRange versions [ 'update',
+88 silly addNameRange   [ '0.1.0',
+88 silly addNameRange     '0.2.0',
+88 silly addNameRange     '0.3.0-beta',
+88 silly addNameRange     '0.3.1-beta',
+88 silly addNameRange     '0.3.2-beta',
+88 silly addNameRange     '0.3.3-beta',
+88 silly addNameRange     '0.3.3',
+88 silly addNameRange     '0.3.5',
+88 silly addNameRange     '0.3.6',
+88 silly addNameRange     '0.4.0',
+88 silly addNameRange     '0.4.1',
+88 silly addNameRange     '0.4.2',
+88 silly addNameRange     '0.5.0',
+88 silly addNameRange     '0.5.1',
+88 silly addNameRange     '0.5.2',
+88 silly addNameRange     '0.5.3',
+88 silly addNameRange     '0.5.4',
+88 silly addNameRange     '0.5.5',
+88 silly addNameRange     '0.6.0',
+88 silly addNameRange     '0.6.1',
+88 silly addNameRange     '0.6.2',
+88 silly addNameRange     '0.7.0',
+88 silly addNameRange     '0.7.1',
+88 silly addNameRange     '0.7.2',
+88 silly addNameRange     '0.7.3',
+88 silly addNameRange     '0.7.4' ] ]
+89 silly addNamed update@0.7.4
+90 verbose addNamed "0.7.4" is a plain semver version for update
+91 silly mapToRegistry name update
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://registry.npmjs.org/
+94 silly mapToRegistry uri https://registry.npmjs.org/update
+95 verbose addRemoteTarball https://registry.npmjs.org/update/-/update-0.7.4.tgz not in flight; adding
+96 verbose addRemoteTarball [ 'https://registry.npmjs.org/update/-/update-0.7.4.tgz',
+96 verbose addRemoteTarball   'b1a091c11a3e28ae31ba2eef58b711b82ce98b14' ]
+97 info retry fetch attempt 1 at 5:59:33 PM
+98 info attempt registry request try #1 at 5:59:33 PM
+99 http fetch GET https://registry.npmjs.org/update/-/update-0.7.4.tgz
+100 http fetch 200 https://registry.npmjs.org/to/-/to-0.2.9.tgz
+101 silly fetchAndShaCheck shasum 0ba5a56fe53538db9205ceb6d7ed217aae4635c4
+102 verbose addTmpTarball /var/folders/0z/vjcvnpz97tj5b9tdnyyzd44h3zf5lf/T/npm-86343-aa55d3c5/registry.npmjs.org/to/-/to-0.2.9.tgz not in flight; adding
+103 verbose addTmpTarball already have metadata; skipping unpack for to@0.2.9
+104 silly cache afterAdd to@0.2.9
+105 verbose afterAdd /Users/saurabh.datta/.npm/to/0.2.9/package/package.json not in flight; writing
+106 verbose afterAdd /Users/saurabh.datta/.npm/to/0.2.9/package/package.json written
+107 http fetch 200 https://registry.npmjs.org/update/-/update-0.7.4.tgz
+108 silly fetchAndShaCheck shasum b1a091c11a3e28ae31ba2eef58b711b82ce98b14
+109 verbose addTmpTarball /var/folders/0z/vjcvnpz97tj5b9tdnyyzd44h3zf5lf/T/npm-86343-aa55d3c5/registry.npmjs.org/update/-/update-0.7.4.tgz not in flight; adding
+110 verbose addTmpTarball already have metadata; skipping unpack for update@0.7.4
+111 silly cache afterAdd update@0.7.4
+112 verbose afterAdd /Users/saurabh.datta/.npm/update/0.7.4/package/package.json not in flight; writing
+113 verbose afterAdd /Users/saurabh.datta/.npm/update/0.7.4/package/package.json written
+114 silly install resolved [ { name: 'nodemon',
+114 silly install resolved     homepage: 'http://nodemon.io',
+114 silly install resolved     author: { name: 'Remy Sharp', url: 'http://github.com/remy' },
+114 silly install resolved     bin: { nodemon: './bin/nodemon.js' },
+114 silly install resolved     engines: { node: '>=0.8' },
+114 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/remy/nodemon.git' },
+114 silly install resolved     description: 'Simple monitor script for use during development of a node.js app.',
+114 silly install resolved     keywords:
+114 silly install resolved      [ 'monitor',
+114 silly install resolved        'development',
+114 silly install resolved        'restart',
+114 silly install resolved        'autoload',
+114 silly install resolved        'reload',
+114 silly install resolved        'terminal' ],
+114 silly install resolved     license: 'MIT',
+114 silly install resolved     main: './lib/nodemon',
+114 silly install resolved     scripts:
+114 silly install resolved      { coverage: 'istanbul cover _mocha -- --timeout 30000 --ui bdd --reporter list test/**/*.test.js',
+114 silly install resolved        lint: 'jscs lib/**/*.js -v',
+114 silly install resolved        ':spec': 'mocha --timeout 30000 --ui bdd test/**/*.test.js',
+114 silly install resolved        test: 'npm run lint && npm run spec',
+114 silly install resolved        spec: 'for FILE in test/**/*.test.js; do echo $FILE; ./node_modules/.bin/mocha --timeout 30000 $FILE; if [ $? -ne 0 ]; then exit 1; fi; sleep 1; done',
+114 silly install resolved        web: 'node web',
+114 silly install resolved        'semantic-release': 'semantic-release pre && npm publish && semantic-release post' },
+114 silly install resolved     devDependencies:
+114 silly install resolved      { async: '1.4.2',
+114 silly install resolved        'coffee-script': '~1.7.1',
+114 silly install resolved        connect: '~2.19.1',
+114 silly install resolved        istanbul: '~0.2.10',
+114 silly install resolved        jscs: '2.1.1',
+114 silly install resolved        mocha: '2.3.3',
+114 silly install resolved        should: '~4.0.0',
+114 silly install resolved        'semantic-release': '4.3.5' },
+114 silly install resolved     dependencies:
+114 silly install resolved      { chokidar: '^1.4.3',
+114 silly install resolved        debug: '^2.2.0',
+114 silly install resolved        'es6-promise': '^3.0.2',
+114 silly install resolved        'ignore-by-default': '^1.0.0',
+114 silly install resolved        'lodash.defaults': '^3.1.2',
+114 silly install resolved        minimatch: '^3.0.0',
+114 silly install resolved        'ps-tree': '^1.0.1',
+114 silly install resolved        touch: '1.0.0',
+114 silly install resolved        undefsafe: '0.0.3',
+114 silly install resolved        'update-notifier': '0.5.0' },
+114 silly install resolved     version: '1.11.0',
+114 silly install resolved     gitHead: '2cd85b1f609e9749d19afcdbd71368e6ab063f9d',
+114 silly install resolved     bugs: { url: 'https://github.com/remy/nodemon/issues' },
+114 silly install resolved     _id: 'nodemon@1.11.0',
+114 silly install resolved     _shasum: '226c562bd2a7b13d3d7518b49ad4828a3623d06c',
+114 silly install resolved     _from: 'nodemon@*',
+114 silly install resolved     _npmVersion: '2.15.11',
+114 silly install resolved     _nodeVersion: '6.7.0',
+114 silly install resolved     _npmUser: { name: 'remy', email: 'remy@leftlogic.com' },
+114 silly install resolved     dist:
+114 silly install resolved      { shasum: '226c562bd2a7b13d3d7518b49ad4828a3623d06c',
+114 silly install resolved        tarball: 'https://registry.npmjs.org/nodemon/-/nodemon-1.11.0.tgz' },
+114 silly install resolved     maintainers: [ [Object] ],
+114 silly install resolved     _npmOperationalInternal:
+114 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+114 silly install resolved        tmp: 'tmp/nodemon-1.11.0.tgz_1475780171533_0.901109219994396' },
+114 silly install resolved     directories: {},
+114 silly install resolved     _resolved: 'https://registry.npmjs.org/nodemon/-/nodemon-1.11.0.tgz',
+114 silly install resolved     readme: 'ERROR: No README data found!' },
+114 silly install resolved   { name: 'to',
+114 silly install resolved     description: 'load/convert between xml,json,yaml formats',
+114 silly install resolved     homepage: 'https://github.com/openmason/to',
+114 silly install resolved     version: '0.2.9',
+114 silly install resolved     author: { name: 'el aras', email: 'openmason@gmail.com' },
+114 silly install resolved     dependencies:
+114 silly install resolved      { handy: '>= 0.0.11',
+114 silly install resolved        underscore: '>= 1.4.0',
+114 silly install resolved        'js-yaml': '>= 1.0.2',
+114 silly install resolved        htmlparser: '>= 1.7.6',
+114 silly install resolved        optimist: '>= 0.3.5' },
+114 silly install resolved     devDependencies: { mocha: '>= 1.6.0', should: '>= 1.2.0' },
+114 silly install resolved     keywords: [ 'converter', 'convertor', 'json', 'xml', 'yaml' ],
+114 silly install resolved     repository: { type: 'git', url: 'git://github.com/openmason/to' },
+114 silly install resolved     main: 'index',
+114 silly install resolved     scripts: { prepublish: 'npm prune', test: 'make test' },
+114 silly install resolved     engines: { node: '>= 0.8.0' },
+114 silly install resolved     readme: '[![build status](https://secure.travis-ci.org/openmason/to.png)](http://travis-ci.org/openmason/to)\n\n# to.js\ncollection of convertors.\nComes with command line options to use the convertors along with a library version that can be used within programs as well.\n\n# Solves\n  * read input formats json, xml, yaml \n  * converts the document to internal javascript object form\n  * write output as json, yaml documents\n  * only input xml is handled (no output xml yet)\n\n## Installation\n\n    $ npm install -g to\n    $ npm install to\n\n## Usage\n\nCommand line:\n\n     # reads xml file and prints it in yml\n     $ to -i examples/sample.xml -o .yaml\n     \n     # reads yaml and prints it in json\n     $ to -i examples/sample.yml -o .json\n\nWithin your program:\n\n    var to = require(\'to\');\n    \n    # Load yaml\n    var yamldoc = to.format.yaml.load(\'config.yaml\');\n    \n    # print doc in yaml \n    var doc = ...;\n    console.log(to.format.yaml.stringify(doc));\n\n * refer to examples directory for xml, json, yaml code\n\n## Example\nFor a sample input xml:\n\n    <?xml version="1.0" encoding="UTF-8" ?>\n    <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">    \n    <dummy>\n    <value>15</value>\n    <value>35</value>\n    <value>5</value>\n    <value>4784</value>\n    <value>one more</value>\n    <h>decent</h>\n    <h>list</h>\n    <h>another</h>\n    <object>value</object>\n    <inner>\n      <h1>value</h1>\n      <li>got</li>\n      <li>milk</li>\n    </inner>\n   </dummy>\n\nOutput in json:\n\n    {\n      "dummy": {\n        "value": [\n          "15",\n          "35",\n          "5",\n          "4784",\n          "one more"\n        ],\n        "h": [\n          "decent",\n          "list",\n          "another"\n        ],\n        "object": "value",\n        "inner": {\n          "h1": "value",\n          "li": [\n            "got",\n            "milk"\n          ]\n        }\n      }\n    }\n    \n    # to try this example\n    $ to -i examples/sample1.xml -o .json\n\nOutput in yaml:\n\n    dummy: \n      value: \n        - 15\n        - 35\n        - 5\n        - 4784\n        - "one more"\n      h: \n        - decent\n        - list\n        - another\n      object: value\n      inner: \n        h1: value\n        li: \n          - got\n          - milk\n\n    # to try this example\n    $ to -i examples/sample1.xml -o .yaml\n\n## Todo\n * Input html (be forgiving with bad html)\n * Input markdown \n * Output xml\n * Output html\n * add unit tests\n * allow beautification params for all outputs \n\n## Test cases\nTo execute full test cases\n\n    $ make\n\n',
+114 silly install resolved     _id: 'to@0.2.9',
+114 silly install resolved     dist:
+114 silly install resolved      { shasum: '0ba5a56fe53538db9205ceb6d7ed217aae4635c4',
+114 silly install resolved        tarball: 'https://registry.npmjs.org/to/-/to-0.2.9.tgz' },
+114 silly install resolved     maintainers: [ [Object], [Object] ],
+114 silly install resolved     directories: {},
+114 silly install resolved     _shasum: '0ba5a56fe53538db9205ceb6d7ed217aae4635c4',
+114 silly install resolved     _resolved: 'https://registry.npmjs.org/to/-/to-0.2.9.tgz',
+114 silly install resolved     _from: 'to@*' },
+114 silly install resolved   { name: 'update',
+114 silly install resolved     description: 'Be scalable! Update is a new, open source developer framework and CLI for automating updates of any kind in code projects.',
+114 silly install resolved     version: '0.7.4',
+114 silly install resolved     homepage: 'https://github.com/update/update',
+114 silly install resolved     author:
+114 silly install resolved      { name: 'Jon Schlinkert',
+114 silly install resolved        url: 'https://github.com/jonschlinkert' },
+114 silly install resolved     contributors: [ [Object], [Object] ],
+114 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/update/update.git' },
+114 silly install resolved     bugs: { url: 'https://github.com/update/update/issues' },
+114 silly install resolved     license: 'MIT',
+114 silly install resolved     files: [ 'bin', 'index.js', 'lib', 'LICENSE', 'README.md' ],
+114 silly install resolved     main: 'index.js',
+114 silly install resolved     preferGlobal: true,
+114 silly install resolved     bin: { update: 'bin/update.js' },
+114 silly install resolved     engines: { node: '>=5.0' },
+114 silly install resolved     scripts: { test: 'mocha' },
+114 silly install resolved     dependencies:
+114 silly install resolved      { 'arr-union': '^3.1.0',
+114 silly install resolved        'assemble-core': '^0.25.0',
+114 silly install resolved        'assemble-loader': '^0.6.1',
+114 silly install resolved        'base-cli-process': '^0.1.18',
+114 silly install resolved        'base-config-process': '^0.1.9',
+114 silly install resolved        'base-generators': '^0.4.5',
+114 silly install resolved        'base-questions': '^0.7.3',
+114 silly install resolved        'base-runtimes': '^0.2.0',
+114 silly install resolved        'base-store': '^0.4.4',
+114 silly install resolved        'common-config': '^0.1.0',
+114 silly install resolved        'data-store': '^0.16.1',
+114 silly install resolved        'export-files': '^2.1.1',
+114 silly install resolved        'extend-shallow': '^2.0.1',
+114 silly install resolved        'find-pkg': '^0.1.2',
+114 silly install resolved        'fs-exists-sync': '^0.1.0',
+114 silly install resolved        'global-modules': '^0.2.2',
+114 silly install resolved        'gulp-choose-files': '^0.1.3',
+114 silly install resolved        'is-valid-app': '^0.2.0',
+114 silly install resolved        isobject: '^2.1.0',
+114 silly install resolved        'lazy-cache': '^2.0.1',
+114 silly install resolved        'log-utils': '^0.2.1',
+114 silly install resolved        'parser-front-matter': '^1.4.1',
+114 silly install resolved        'resolve-dir': '^0.1.0',
+114 silly install resolved        'resolve-file': '^0.2.0',
+114 silly install resolved        'set-blocking': '^2.0.0',
+114 silly install resolved        'strip-color': '^0.1.0',
+114 silly install resolved        'text-table': '^0.2.0',
+114 silly install resolved        through2: '^2.0.1',
+114 silly install resolved        'yargs-parser': '^2.4.1' },
+114 silly install resolved     devDependencies:
+114 silly install resolved      { 'base-runner': '^0.8.2',
+114 silly install resolved        'base-test-runner': '^0.2.0',
+114 silly install resolved        'base-test-suite': '^0.1.12',
+114 silly install resolved        'cross-spawn': '^4.0.0',
+114 silly install resolved        'generate-foo': '^0.1.5',
+114 silly install resolved        'graceful-fs': '^4.1.4',
+114 silly install resolved        gulp: '^3.9.1',
+114 silly install resolved        'gulp-eslint': '^3.0.1',
+114 silly install resolved        'gulp-format-md': '^0.1.9',
+114 silly install resolved        'gulp-istanbul': '^1.0.0',
+114 silly install resolved        'gulp-mocha': '^2.2.0',
+114 silly install resolved        'gulp-unused': '^0.1.2',
+114 silly install resolved        'helper-changelog': '^0.3.0',
+114 silly install resolved        'is-absolute': '^0.2.5',
+114 silly install resolved        'load-pkg': '^3.0.1',
+114 silly install resolved        mocha: '^2.5.3',
+114 silly install resolved        'npm-install-global': '^0.1.2',
+114 silly install resolved        resolve: '^1.1.7',
+114 silly install resolved        should: '^9.0.2',
+114 silly install resolved        sinon: '^1.17.4',
+114 silly install resolved        'updater-example': '^0.1.2' },
+114 silly install resolved     keywords:
+114 silly install resolved      [ 'convention',
+114 silly install resolved        'dev',
+114 silly install resolved        'develop',
+114 silly install resolved        'fix',
+114 silly install resolved        'lint',
+114 silly install resolved        'maintain',
+114 silly install resolved        'manage',
+114 silly install resolved        'standard',
+114 silly install resolved        'tools',
+114 silly install resolved        'up-to-date',
+114 silly install resolved        'update' ],
+114 silly install resolved     update: { run: true, add: [Object] },
+114 silly install resolved     verb:
+114 silly install resolved      { run: true,
+114 silly install resolved        toc: true,
+114 silly install resolved        layout: 'app',
+114 silly install resolved        tasks: [Object],
+114 silly install resolved        plugins: [Object],
+114 silly install resolved        helpers: [Object],
+114 silly install resolved        related: [Object],
+114 silly install resolved        reflinks: [Object],
+114 silly install resolved        lint: [Object] },
+114 silly install resolved     gitHead: '2374a5f2f85f797ac9d39c7ebbec33b5623a3ce9',
+114 silly install resolved     _id: 'update@0.7.4',
+114 silly install resolved     _shasum: 'b1a091c11a3e28ae31ba2eef58b711b82ce98b14',
+114 silly install resolved     _from: 'update@*',
+114 silly install resolved     _npmVersion: '3.10.3',
+114 silly install resolved     _nodeVersion: '6.3.0',
+114 silly install resolved     _npmUser: { name: 'jonschlinkert', email: 'github@sellside.com' },
+114 silly install resolved     maintainers: [ [Object] ],
+114 silly install resolved     dist:
+114 silly install resolved      { shasum: 'b1a091c11a3e28ae31ba2eef58b711b82ce98b14',
+114 silly install resolved        tarball: 'https://registry.npmjs.org/update/-/update-0.7.4.tgz' },
+114 silly install resolved     _npmOperationalInternal:
+114 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+114 silly install resolved        tmp: 'tmp/update-0.7.4.tgz_1472705144974_0.49386734468862414' },
+114 silly install resolved     directories: {},
+114 silly install resolved     _resolved: 'https://registry.npmjs.org/update/-/update-0.7.4.tgz' } ]
+115 info install nodemon@1.11.0 into /Users/saurabh.datta/.node_modules_global/lib
+116 info install to@0.2.9 into /Users/saurabh.datta/.node_modules_global/lib
+117 info install update@0.7.4 into /Users/saurabh.datta/.node_modules_global/lib
+118 info installOne nodemon@1.11.0
+119 verbose installOne of nodemon to /Users/saurabh.datta/.node_modules_global/lib not in flight; installing
+120 info installOne to@0.2.9
+121 verbose installOne of to to /Users/saurabh.datta/.node_modules_global/lib not in flight; installing
+122 info installOne update@0.7.4
+123 verbose installOne of update to /Users/saurabh.datta/.node_modules_global/lib not in flight; installing
+124 verbose lock using /Users/saurabh.datta/.npm/_locks/nodemon-3b5c35b4694c5f6b.lock for /Users/saurabh.datta/.node_modules_global/lib/node_modules/nodemon
+125 verbose lock using /Users/saurabh.datta/.npm/_locks/to-fcff4c23e65bf02c.lock for /Users/saurabh.datta/.node_modules_global/lib/node_modules/to
+126 verbose lock using /Users/saurabh.datta/.npm/_locks/update-6fcee3a3b8fbcc40.lock for /Users/saurabh.datta/.node_modules_global/lib/node_modules/update
+127 warn engine update@0.7.4: wanted: {"node":">=5.0"} (current: {"node":"4.2.2","npm":"2.14.7"})
+128 silly install write writing to 0.2.9 to /Users/saurabh.datta/.node_modules_global/lib/node_modules/to
+129 silly install write writing update 0.7.4 to /Users/saurabh.datta/.node_modules_global/lib/node_modules/update
+130 silly install write writing nodemon 1.11.0 to /Users/saurabh.datta/.node_modules_global/lib/node_modules/nodemon
+131 verbose unbuild lib/node_modules/to
+132 verbose unbuild lib/node_modules/nodemon
+133 verbose unbuild lib/node_modules/update
+134 silly gentlyRm /Users/saurabh.datta/.node_modules_global/lib/node_modules/to is being purged from base /Users/saurabh.datta/.node_modules_global
+135 verbose gentlyRm don't care about contents; nuking /Users/saurabh.datta/.node_modules_global/lib/node_modules/to
+136 silly gentlyRm /Users/saurabh.datta/.node_modules_global/lib/node_modules/update is being purged from base /Users/saurabh.datta/.node_modules_global
+137 verbose gentlyRm don't care about contents; nuking /Users/saurabh.datta/.node_modules_global/lib/node_modules/update
+138 verbose tar unpack /Users/saurabh.datta/.npm/to/0.2.9/package.tgz
+139 verbose tar unpacking to /Users/saurabh.datta/.node_modules_global/lib/node_modules/to
+140 silly gentlyRm /Users/saurabh.datta/.node_modules_global/lib/node_modules/to is being purged
+141 verbose gentlyRm don't care about contents; nuking /Users/saurabh.datta/.node_modules_global/lib/node_modules/to
+142 verbose tar unpack /Users/saurabh.datta/.npm/update/0.7.4/package.tgz
+143 verbose tar unpacking to /Users/saurabh.datta/.node_modules_global/lib/node_modules/update
+144 silly gentlyRm /Users/saurabh.datta/.node_modules_global/lib/node_modules/update is being purged
+145 verbose gentlyRm don't care about contents; nuking /Users/saurabh.datta/.node_modules_global/lib/node_modules/update
+146 silly gunzTarPerm modes [ '755', '644' ]
+147 silly gunzTarPerm modes [ '755', '644' ]
+148 info preuninstall nodemon@1.8.1
+149 info uninstall nodemon@1.8.1
+150 verbose unbuild rmStuff nodemon@1.8.1 from /Users/saurabh.datta/.node_modules_global/lib/node_modules
+151 silly gentlyRm /Users/saurabh.datta/.node_modules_global/bin/nodemon is being gently removed
+152 silly gentlyRm verifying /Users/saurabh.datta/.node_modules_global is an npm working directory
+153 error tar.unpack untar error /Users/saurabh.datta/.npm/to/0.2.9/package.tgz
+154 silly gentlyRm containing path /Users/saurabh.datta/.node_modules_global is under npm's control, in /Users/saurabh.datta/.node_modules_global
+155 silly gentlyRm deletion target /Users/saurabh.datta/.node_modules_global/bin/nodemon is under /Users/saurabh.datta/.node_modules_global
+156 verbose gentlyRm vacuuming from /Users/saurabh.datta/.node_modules_global/bin/nodemon up to /Users/saurabh.datta/.node_modules_global
+157 error tar.unpack untar error /Users/saurabh.datta/.npm/update/0.7.4/package.tgz
+158 verbose unlock done using /Users/saurabh.datta/.npm/_locks/to-fcff4c23e65bf02c.lock for /Users/saurabh.datta/.node_modules_global/lib/node_modules/to
+159 silly vacuum-fs removing /Users/saurabh.datta/.node_modules_global/bin/nodemon
+160 verbose unlock done using /Users/saurabh.datta/.npm/_locks/update-6fcee3a3b8fbcc40.lock for /Users/saurabh.datta/.node_modules_global/lib/node_modules/update
+161 verbose unlock done using /Users/saurabh.datta/.npm/_locks/nodemon-3b5c35b4694c5f6b.lock for /Users/saurabh.datta/.node_modules_global/lib/node_modules/nodemon
+162 verbose fstream_path /Users/saurabh.datta/.node_modules_global/lib/node_modules/to
+163 verbose fstream_type Directory
+164 verbose fstream_class DirWriter
+165 verbose stack Error: EACCES: permission denied, mkdir '/Users/saurabh.datta/.node_modules_global/lib/node_modules/to'
+165 verbose stack     at Error (native)
+166 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+166 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+166 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+167 verbose cwd /Users/saurabh.datta/Desktop/MY--PROJECTS/_MailStuff/p5_experiments/PhotoDropSVGExportTest
+168 error Darwin 14.5.0
+169 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "nodemon" "to" "update" "--save"
+170 error node v4.2.2
+171 error npm  v2.14.7
+172 error path /Users/saurabh.datta/.node_modules_global/lib/node_modules/to
+173 error code EACCES
+174 error errno -13
+175 error syscall mkdir
+176 error Error: EACCES: permission denied, mkdir '/Users/saurabh.datta/.node_modules_global/lib/node_modules/to'
+176 error     at Error (native)
+176 error  { [Error: EACCES: permission denied, mkdir '/Users/saurabh.datta/.node_modules_global/lib/node_modules/to']
+176 error   errno: -13,
+176 error   code: 'EACCES',
+176 error   syscall: 'mkdir',
+176 error   path: '/Users/saurabh.datta/.node_modules_global/lib/node_modules/to',
+176 error   fstream_type: 'Directory',
+176 error   fstream_path: '/Users/saurabh.datta/.node_modules_global/lib/node_modules/to',
+176 error   fstream_class: 'DirWriter',
+176 error   fstream_stack:
+176 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+176 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+176 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+177 error Please try running this command again as root/Administrator.
+178 verbose exit [ -13, true ]
+179 verbose unbuild lib/node_modules/to
+180 silly gentlyRm /Users/saurabh.datta/.node_modules_global/lib/node_modules/to is being purged from base /Users/saurabh.datta/.node_modules_global
+181 verbose gentlyRm don't care about contents; nuking /Users/saurabh.datta/.node_modules_global/lib/node_modules/to
+182 verbose unbuild lib/node_modules/update
+183 silly gentlyRm /Users/saurabh.datta/.node_modules_global/lib/node_modules/update is being purged from base /Users/saurabh.datta/.node_modules_global
+184 verbose gentlyRm don't care about contents; nuking /Users/saurabh.datta/.node_modules_global/lib/node_modules/update
+185 verbose unbuild lib/node_modules/nodemon
+186 info preuninstall nodemon@1.8.1
+187 info uninstall nodemon@1.8.1
+188 verbose unbuild rmStuff nodemon@1.8.1 from /Users/saurabh.datta/.node_modules_global/lib/node_modules
+189 silly gentlyRm /Users/saurabh.datta/.node_modules_global/bin/nodemon is being gently removed
+190 silly gentlyRm verifying /Users/saurabh.datta/.node_modules_global is an npm working directory
+191 silly gentlyRm containing path /Users/saurabh.datta/.node_modules_global is under npm's control, in /Users/saurabh.datta/.node_modules_global
+192 silly gentlyRm deletion target /Users/saurabh.datta/.node_modules_global/bin/nodemon is under /Users/saurabh.datta/.node_modules_global
+193 verbose gentlyRm vacuuming from /Users/saurabh.datta/.node_modules_global/bin/nodemon up to /Users/saurabh.datta/.node_modules_global
+194 silly vacuum-fs removing /Users/saurabh.datta/.node_modules_global/bin/nodemon
+195 error error rolling back Error: EACCES: permission denied, unlink '/Users/saurabh.datta/.node_modules_global/bin/nodemon'
+195 error error rolling back     at Error (native)
+195 error error rolling back  { [Error: EACCES: permission denied, unlink '/Users/saurabh.datta/.node_modules_global/bin/nodemon']
+195 error error rolling back   errno: -13,
+195 error error rolling back   code: 'EACCES',
+195 error error rolling back   syscall: 'unlink',
+195 error error rolling back   path: '/Users/saurabh.datta/.node_modules_global/bin/nodemon' }
