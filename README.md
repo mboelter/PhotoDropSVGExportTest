@@ -8,5 +8,5 @@ npm install
 #####To run the server with out restarting (hoping the nodemon package has installed in your mac) :
 
 `
-nodemon server.js  to constantly run
+nodemon server.js
 `
