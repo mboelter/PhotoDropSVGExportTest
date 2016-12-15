@@ -1,16 +1,14 @@
-var controlParameters;
+var cp;
 var gui;
-var file;
-var fr;
 
 var img = new Array(35);
 var imgIndex = 1;
-var thresholdValue = 0.0;
-var oldThresholdValue = 0.4;
-var scanning = false;
-var scX = 5;
-var scY = 5;
+var thresholdValue = 70;
+
 var radius = 5;
+var saveSvg = false;
+
+var fillColor = 255;
 
 
 function preload() {
@@ -21,82 +19,75 @@ function preload() {
 
 
 function setup() {
-    createCanvas(1200, 600, SVG);
+    createCanvas(600, 600, SVG);
 
-    background(125);
+    background(255);
 
     cp = new Controls();
     gui = new dat.GUI();
     initGUI();
-
-    frameRate(5);
 }
 
 function draw() {
-    background(125);
 
-    thresholdValue = cp.threshold_value;
-    if (thresholdValue != oldThresholdValue) {
-        img[imgIndex].filter("threshold", thresholdValue);
-        console.log(thresholdValue);
-        oldThresholdValue = thresholdValue;
+    background(255);
+
+    // image(img[imgIndex], 0, 0, 600, 600);
+    // console.log(img[imgIndex].get(mouseX, mouseY));
+
+    drawPixelated(img[imgIndex]);
+    oldImgIndex = imgIndex;
+}
+
+
+
+function drawPixelated(refImg) {
+    refImg.loadPixels();
+    if (refImg.pixels.length > 0) {
+        var w = refImg.width,
+            h = refImg.height;
+
+        for (var y = 4; y < h; y += cp.steps) {
+            for (var x = 4; x < w; x += cp.steps) {
+
+                var color = refImg.get(x, y);
+
+                fillColor = 0;
+
+                // just taking any one channel and not alpha
+                if (color[0] > cp.threshold_value) {
+                    fillColor = 255;
+                }
+                fill(fillColor);
+                noStroke();
+                ellipse(x, y, cp.ellipseSize, ep.ellipseSize);
+            }
+        }
     }
-    image(img[imgIndex], 0, 0, 600, 600);
-    
-    // If you commet the codes up and uncomment these parts,  the shape of the circle 
-    // changes with "threshold" slider value
-    
-    // fill(50);
-    // noStroke();
-    // ellipse(width / 2, height / 2, map(thresholdValue, 0.0, 1.0, 10, 200), map(thresholdValue, 0.0, 1.0, 10, 200));
 }
 
 var initGUI = function() {
     gui.add(cp, 'change_image');
-    gui.add(cp, 'threshold_value', 0.0, 1.0);
-    gui.add(cp, 'start_scanning');
-    gui.add(cp, 'stop_scanning');
-    gui.add(cp, 'XSteps', 0, 255);
-    gui.add(cp, 'YSteps', 0, 255);
-    gui.add(cp, 'ellipseSize', 0, 255);
-    gui.add(cp, 'reset');
+    gui.add(cp, 'threshold_value', 10, 200);
+    gui.add(cp, 'steps', 2, 20);
+    gui.add(cp, 'ellipseSize', 2, 20);
+    gui.add(cp, 'save_svg');
 };
 
 var Controls = function() {
 
     this.change_image = function() {
-        newImage = true;
         imgIndex++;
         if (imgIndex > 34) {
             imgIndex = 1;
         }
     };
 
-    this.threshold_value = 0.5;
+    this.threshold_value = 70;
+    this.steps = 8;
+    this.ellipseSize = 8;
 
-    this.start_scanning = function() {
-        // console.log("scanning started");
-        scanning = true;
-    };
-
-    this.stop_scanning = function() {
-        // console.log("scanning stopped");
-        scanning = false;
-    };
-
-    this.XSteps = 5;
-    this.YSteps = 5;
-    this.ellipseSize = 5;
-
-    this.reset = function() {
-        console.log("reset");
-        resetEverything();
+    this.save_svg = function() {
+        save();
     };
 };
-
-function resetEverything() {
-    scanning = false;
-    cp.XSteps = 5;
-    cp.YSteps = 5;
-    radius = 5;
-}
