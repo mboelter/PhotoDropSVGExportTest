@@ -10,3 +10,11 @@ npm install
 `
 nodemon server.js
 `
+
+I've a bunch of images in the `/public/images/` folder which are numbered 1-**totalnumbers**. I scroll through them in this sketch and make changes.. 
+
+Remeber to include images in the `/public/images/` and then according to number of images in the directory, change in ` var number_of_images` in `sketch.js` .
+
+
+
+
