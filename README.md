@@ -5,7 +5,7 @@
 `
 npm install 
 `
-#####To run the server with out restarting (hoping the nodemon package has installed in your mac) :
+#####To run the server with out restarting (hoping the nodemon package have installed in your mac - if not try installing it globally by `npm install nodemon -g --save`) :
 
 `
 nodemon server.js
