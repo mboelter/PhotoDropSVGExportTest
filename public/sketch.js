@@ -36,7 +36,6 @@ function draw() {
     // console.log(img[imgIndex].get(mouseX, mouseY));
 
     drawPixelated(img[imgIndex]);
-    oldImgIndex = imgIndex;
 }
 
 
