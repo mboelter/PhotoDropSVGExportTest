@@ -8,7 +8,9 @@ var gui;
 
 var fillValue;
 var saveFlag = false;
-var svg = '<svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">';
+var svg;
+
+var counter = 0;
 
 function setup() {
     createCanvas(640, 480);
@@ -22,6 +24,9 @@ function setup() {
     cp = new Controls();
     gui = new dat.GUI();
     initGUI();
+
+    //------------starting tags of svg
+    svg = '<svg width="640" height="480" version="1.1" xmlns="http://www.w3.org/2000/svg">';
 }
 
 function draw() {
@@ -37,6 +42,7 @@ function draw() {
 
     video.loadPixels();
     loadPixels();
+
 
     for (var y = 0; y < video.height; y++) {
         for (var x = 0; x < video.width; x++) {
@@ -54,7 +60,16 @@ function draw() {
             } else {
                 fillValue = 0;
 
-                svg += '<circle fill="black" stroke="none" cx="' + x * vScale + '" cy="' + y * vScale + '" r="' + vScale + '" >< /circle>';
+                // svg += '<circle fill="black" stroke="none" cx="' + x * vScale + '" cy="' + y * vScale + '" r="' + vScale + '" >< /circle>';
+
+                // if (saveFlag) {
+                //     //------------closing tag of svg
+                //     svg += '</svg>';
+                //     console.log(svg);
+                //     saveFlag = false;
+                //     svg = '';
+                //     svg = '<svg width="640" height="480" version="1.1" xmlns="http://www.w3.org/2000/svg">';
+                // }
             }
 
             fill(fillValue);
@@ -79,8 +94,5 @@ var Controls = function() {
     this.Save_SVG = function() {
         // save();
         saveFlag = true;
-
-        svg += '</svg>';
-        console.log(svg);
     };
 };
