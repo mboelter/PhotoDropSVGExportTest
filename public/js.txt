@@ -1,0 +1,97 @@
+// thresholdValue = cp.threshold_value;
+    //Have to create a new image which is the same as the original one
+    //otherwise you apply the threshold to the same image
+    //Ie: first your original image THEN apply threshold on it (works) THEN apply
+    //threshold on the previous threshold image (doesn't work as it's already thresholded!
+
+    // copiedImg = copyImage(img[imgIndex]);
+    // // imgThresh.filter("threshold", thresholdValue);
+    // imgThresh = thresholdImage(copiedImg, thresholdValue);
+    // image(imgThresh, 0, 0, 600, 600);
+
+    // if (scanning) {
+    //     scanner();
+    // }
+    // noFill();
+    // stroke(255, 0, 0);
+    // strokeWeight(0.25);
+    // ellipse(scX, scY, cp.ellipseSize, cp.ellipseSize);
+
+
+function copyImage(_ref) {
+    _ref.loadPixels(); //Load reference image pixels
+    var px = _ref.pixels; //The pixels of the reference..
+    var it = 0;
+    var img = createImage(_ref.width, _ref.height); //Create the image at same W & H
+    //Iterate through each pixels of existing image to copy them in the new image
+    for (var x = 0; x < img.width; x++) {
+        for (var y = 0; y < img.height; y++) {
+            img.set(y, x, px[it]);
+            it += 4; //as it's black and white the R value is enough..so skip the G, B and alpha
+            //might need to change that part if you do colour images
+            //If it’s color image probably you have 
+            //to do img.set(y,x,color(px[it], px[it+1], px[it+2])
+        }
+    }
+    img.updatePixels(); //update pixels of new image
+    return img;
+}
+
+function thresholdImage(ci, thresholdAmount) {
+    ci.loadPixels();
+    if (ci.pixels.length > 0) { // don't forget this!
+        var w = ci.width,
+            h = ci.height;
+        var i = 0;
+        var pixels = ci.pixels;
+        var total = 0;
+        for (var y = 0; y < h; y++) {
+            for (var x = 0; x < w; x++) {
+                // noStroke();
+                // fill(0);
+                // ellipse(x, y, 5, 5);
+                // var redValue = pixels[i];
+                // var outputValue = 0;
+                // if (redValue > thresholdAmount) {
+                //     outputValue = 255;
+                //     total++;
+                // }
+                // pixels[i++] = outputValue; // set red
+                // pixels[i++] = outputValue; // set green
+                // pixels[i++] = outputValue; // set blue
+                // i++; // skip alpha
+            }
+        }
+
+        // var n = w * h;
+        // var ratio = total / n;
+    }
+    ci.updatePixels();
+    return ci;
+}
+
+function scanner() {
+    // console.log("scanning");
+    if (scX >= (width / 2) - 10) {
+        scY += cp.YSteps;
+        changeDir = true;
+    }
+    if (scX <= 5) {
+        scY += cp.YSteps;
+        changeDir = false;
+    }
+
+    if (!changeDir) {
+        scX += cp.XSteps;
+    } else {
+        scX -= cp.XSteps;
+    }
+
+    if (scY >= height - 10) { // if you've reached the end after scanning 
+        scanning = false; // don't scan anymore
+        // reset co-ordinates for drawing board
+        //reset co-ordinates for the scanner
+        scX = 5;
+        scY = 5;
+    }
+}
