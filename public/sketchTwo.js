@@ -3,19 +3,20 @@ var video;
 var vScale = 8;
 var oldVScale = 0;
 
-var ctx ; //************************** NEW
-
 var cp;
 var gui;
 
+var fillValue;
+var saveFlag = false;
+var svg = '<svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">';
+
 function setup() {
     createCanvas(640, 480);
-    ctx = new C2S(640,480); //************************** NEW
 
     pixelDensity(1);
 
     video = createCapture(VIDEO);
-    
+
     noStroke();
 
     cp = new Controls();
@@ -25,15 +26,15 @@ function setup() {
 
 function draw() {
     background(255);
-    
+
     vScale = cp.Pixel_Size;
 
-    if(vScale != oldVScale){
+    if (vScale != oldVScale) {
         video.size(width / vScale, height / vScale);
         oldVScale = vScale;
     }
 
-    
+
     video.loadPixels();
     loadPixels();
 
@@ -49,15 +50,15 @@ function draw() {
             var brightness = (r + g + b) / 3; // grey scale value
 
             if (brightness > cp.Threshold) {
-                fill(255);
-                ctx.fillStyle = 'rgba(255,255,255,1)'; //************************** NEW
+                fillValue = 255;
             } else {
-                fill(0);
-                ctx.fillStyle = 'rgba(0,0,0,1)'; //************************** NEW
+                fillValue = 0;
+
+                svg += '<circle fill="black" stroke="none" cx="' + x * vScale + '" cy="' + y * vScale + '" r="' + vScale + '" >< /circle>';
             }
 
+            fill(fillValue);
             ellipse(x * vScale, y * vScale, vScale, vScale);
-            ctx.fillRect(x * vScale, y * vScale, vScale, vScale); //************************** NEW
         }
     }
 }
@@ -77,13 +78,9 @@ var Controls = function() {
 
     this.Save_SVG = function() {
         // save();
-        saveSVG(); //************************** NEW
+        saveFlag = true;
+
+        svg += '</svg>';
+        console.log(svg);
     };
 };
-
-
-//************************** NEW
-function saveSVG(){
-    var canvasSVG = ctx.getSerializedSvg(true);
-    console.log(canvasSVG);
-}
