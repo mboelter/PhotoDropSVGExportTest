@@ -1,10 +1,7 @@
-function setup() {
-  var myCanvas = createCanvas(600, 400);
-  myCanvas.parent('myContainer');
-
-  // createCanvas(600, 400);
-}
-
-function draw(){
-  background(56);
-}
+var ctx = new C2S(500,500); //width, height of your desired svg file
+//do your normal canvas stuff:
+ctx.fillStyle="red";
+ctx.fillRect(100,100,100,100);
+//ok lets serialize to SVG:
+var myRectangle = ctx.getSerializedSvg(true);
+console.log(myRectangle);
